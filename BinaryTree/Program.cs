@@ -18,7 +18,7 @@ b.Left = d;
 
 NodeInt nodeInt = new(3);
 NodeInt nodeInt1 = new(11);
-NodeInt nodeInt2 = new(4);
+NodeInt nodeInt2 = new(-4);
 NodeInt nodeInt3 = new(2);
 NodeInt nodeInt4 = new(4);
 NodeInt nodeInt5 = new(1);
@@ -27,6 +27,8 @@ nodeInt.Left = nodeInt4;
 nodeInt1.Left = nodeInt2;
 nodeInt1.Right = nodeInt3;
 nodeInt4.Left = nodeInt5;
+nodeInt4.Left.Left = new NodeInt(-30);
+nodeInt4.Left.Right = new NodeInt(-100);
 
 //node
 //DepthFirstValueSolution.DepthFirstValueIterate(depthFirstValueNode);
@@ -45,8 +47,11 @@ nodeInt4.Left = nodeInt5;
 //TreeSumSolution.TreeSumIteration(nodeInt);
 //TreeSumSolution.TreeSumIteration(null);
 
-TreeSumSolution.TreeSumRecursive(nodeInt);
-TreeSumSolution.TreeSumRecursive(null);
+//MinimumNodeSolution.MinRecursive(nodeInt);
+//MinimumNodeSolution.MinRecursive(null);
+
+MinimumNodeSolution.MinIteration(nodeInt);
+MinimumNodeSolution.MinRecursive(nodeInt);
 Console.WriteLine("Hello, World!");
 
 
