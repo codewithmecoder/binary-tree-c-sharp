@@ -1,5 +1,6 @@
 ﻿using BinaryTree.Problems.BreadthFirstValues;
 using BinaryTree.Problems.DepthFirstValue;
+using BinaryTree.Problems.MaxRootToLeafPathSum;
 using BinaryTree.Problems.TreeIncludes;
 using BinaryTree.Problems.TreeSums;
 
@@ -50,8 +51,11 @@ nodeInt4.Left.Right = new NodeInt(-100);
 //MinimumNodeSolution.MinRecursive(nodeInt);
 //MinimumNodeSolution.MinRecursive(null);
 
-MinimumNodeSolution.MinIteration(nodeInt);
-MinimumNodeSolution.MinRecursive(nodeInt);
+//MinimumNodeSolution.MinIteration(nodeInt);
+//MinimumNodeSolution.MinRecursive(nodeInt);
+MaxRootToLeafPathSumSolution.MaxRootToLeafPathSumRecursive(nodeInt);
+MaxRootToLeafPathSumSolution.MaxRootToLeafPathSumRecursive(new NodeInt(2));
+MaxRootToLeafPathSumSolution.MaxRootToLeafPathSumRecursive(null);
 Console.WriteLine("Hello, World!");
 
 
